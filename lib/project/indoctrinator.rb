@@ -1,9 +1,4 @@
-module Indoctrinator
+$stderr.puts "Please add the CocoaPod ICETutorial" unless defined?(ICETutorialController)
 
-  class Tutorial
-  end
-
-  class Page
-  end
+module Indoctinator
 end
-
