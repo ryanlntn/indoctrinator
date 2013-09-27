@@ -1,0 +1,10 @@
+PODS:
+  - ICETutorial (1.0.2)
+
+DEPENDENCIES:
+  - ICETutorial
+
+SPEC CHECKSUMS:
+  ICETutorial: 697ca0937596f0e88152eb2591ee281d8bd196c7
+
+COCOAPODS: 0.25.0

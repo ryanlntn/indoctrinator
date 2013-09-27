@@ -2,6 +2,7 @@
 $:.unshift("/Library/RubyMotion/lib")
 require 'motion/project/template/ios'
 require './lib/indoctrinator'
+require 'motion-cocoapods'
 
 begin
   require 'bundler'

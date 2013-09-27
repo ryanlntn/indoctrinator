@@ -1,0 +1,184 @@
+<?xml version='1.0'?>
+<signatures version='1.0'>
+<enum name='ScrollingStateAuto' value='1'/>
+<enum name='ScrollingStateLooping' value='4'/>
+<enum name='ScrollingStateManual' value='2'/>
+<enum name='TUTORIAL_DEFAULT_DURATION_ON_PAGE' value='3.0f'/>
+<enum name='TUTORIAL_DESC_LINES_NUMBER' value='2'/>
+<enum name='TUTORIAL_DESC_OFFSET' value='150'/>
+<enum name='TUTORIAL_LABEL_HEIGHT' value='34'/>
+<enum name='TUTORIAL_SUB_TITLE_LINES_NUMBER' value='1'/>
+<enum name='TUTORIAL_SUB_TITLE_OFFSET' value='180'/>
+<class name='ICETutorialController'>
+<method selector='autoScrollDurationOnPage'>
+<retval declared_type='CGFloat' type64='d' type='f'/>
+</method>
+<method selector='autoScrollEnabled'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='autoScrollLooping'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='commonPageDescriptionStyle'>
+<retval declared_type='ICETutorialLabelStyle*' type='@'/>
+</method>
+<method selector='commonPageSubTitleStyle'>
+<retval declared_type='ICETutorialLabelStyle*' type='@'/>
+</method>
+<method selector='getCurrentState'>
+<retval declared_type='ScrollingState' type64='Q' type='I'/>
+</method>
+<method selector='initWithNibName:bundle:'>
+<arg index='0' name='nibNameOrNil' declared_type='NSString*' type='@'/>
+<arg index='1' name='nibBundleOrNil' declared_type='NSBundle*' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithNibName:bundle:andPages:'>
+<arg index='0' name='nibNameOrNil' declared_type='NSString*' type='@'/>
+<arg index='1' name='nibBundleOrNil' declared_type='NSBundle*' type='@'/>
+<arg index='2' name='pages' declared_type='NSArray*' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithNibName:bundle:pages:button1Block:button2Block:'>
+<arg index='0' name='nibNameOrNil' declared_type='NSString*' type='@'/>
+<arg index='1' name='nibBundleOrNil' declared_type='NSBundle*' type='@'/>
+<arg index='2' name='pages' declared_type='NSArray*' type='@'/>
+<arg index='3' name='block1' declared_type='ButtonBlock' type='@?' function_pointer='true'>
+<arg declared_type='UIButton*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg index='4' name='block2' declared_type='ButtonBlock' type='@?' function_pointer='true'>
+<arg declared_type='UIButton*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='numberOfPages'>
+<retval declared_type='NSUInteger' type64='Q' type='I'/>
+</method>
+<method selector='setAutoScrollDurationOnPage:'>
+<arg index='0' name='autoScrollDurationOnPage' declared_type='CGFloat' type64='d' type='f'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setAutoScrollEnabled:'>
+<arg index='0' name='autoScrollEnabled' declared_type='BOOL' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setAutoScrollLooping:'>
+<arg index='0' name='autoScrollLooping' declared_type='BOOL' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setButton1Block:'>
+<arg index='0' name='block' declared_type='ButtonBlock' type='@?' function_pointer='true'>
+<arg declared_type='UIButton*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setButton2Block:'>
+<arg index='0' name='block' declared_type='ButtonBlock' type='@?' function_pointer='true'>
+<arg declared_type='UIButton*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setCommonPageDescriptionStyle:'>
+<arg index='0' name='commonPageDescriptionStyle' declared_type='ICETutorialLabelStyle*' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setCommonPageSubTitleStyle:'>
+<arg index='0' name='commonPageSubTitleStyle' declared_type='ICETutorialLabelStyle*' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setPages:'>
+<arg index='0' name='pages' declared_type='NSArray*' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='startScrolling'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='stopScrolling'>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='ICETutorialLabelStyle'>
+<method selector='font'>
+<retval declared_type='UIFont*' type='@'/>
+</method>
+<method selector='initWithText:'>
+<arg index='0' name='text' declared_type='NSString*' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithText:font:textColor:'>
+<arg index='0' name='text' declared_type='NSString*' type='@'/>
+<arg index='1' name='font' declared_type='UIFont*' type='@'/>
+<arg index='2' name='color' declared_type='UIColor*' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='linesNumber'>
+<retval declared_type='NSUInteger' type64='Q' type='I'/>
+</method>
+<method selector='offset'>
+<retval declared_type='NSUInteger' type64='Q' type='I'/>
+</method>
+<method selector='setFont:'>
+<arg index='0' name='font' declared_type='UIFont*' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setLinesNumber:'>
+<arg index='0' name='linesNumber' declared_type='NSUInteger' type64='Q' type='I'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setOffset:'>
+<arg index='0' name='offset' declared_type='NSUInteger' type64='Q' type='I'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setText:'>
+<arg index='0' name='text' declared_type='NSString*' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setTextColor:'>
+<arg index='0' name='textColor' declared_type='UIColor*' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='text'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='textColor'>
+<retval declared_type='UIColor*' type='@'/>
+</method>
+</class>
+<class name='ICETutorialPage'>
+<method selector='description'>
+<retval declared_type='ICETutorialLabelStyle*' type='@'/>
+</method>
+<method selector='initWithSubTitle:description:pictureName:'>
+<arg index='0' name='subTitle' declared_type='NSString*' type='@'/>
+<arg index='1' name='description' declared_type='NSString*' type='@'/>
+<arg index='2' name='pictureName' declared_type='NSString*' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='pictureName'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='setDescription:'>
+<arg index='0' name='style' declared_type='ICETutorialLabelStyle*' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setPictureName:'>
+<arg index='0' name='pictureName' declared_type='NSString*' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setSubTitle:'>
+<arg index='0' name='subTitle' declared_type='ICETutorialLabelStyle*' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setSubTitleStyle:'>
+<arg index='0' name='style' declared_type='ICETutorialLabelStyle*' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='subTitle'>
+<retval declared_type='ICETutorialLabelStyle*' type='@'/>
+</method>
+</class>
+</signatures>
