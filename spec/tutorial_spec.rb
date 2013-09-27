@@ -15,6 +15,7 @@ describe Indoctrinator::Tutorial do
   it "should allow setting an array of pages on instantiation" do
     @tutorial.pages.should.be.kind_of(Array)
     @tutorial.pages.length.should == 3
+    @tutorial.pages.first.should.be.kind_of(Indoctrinator::Page)
   end
   
   it "should be an instance of ICETutorialController" do
