@@ -12,6 +12,11 @@ module Indoctrinator
       tutorial
     end
 
+    def viewDidAppear(animated)
+      super
+      self.center_pager
+    end
+
     def pages=(pages)
       @pages = pages
       self.setPages(Array(pages))
@@ -55,6 +60,12 @@ module Indoctrinator
 
     def button2
       @button2
+    end
+
+    def center_pager
+      screen_size = UIScreen.mainScreen.bounds.size
+      $pc = self.view.subviews.find{ |v| v.is_a?(UIPageControl) }
+      $pc.frame = [[0, screen_size.height - 100],[screen_size.width, 36]]
     end
 
     def remove(v)
