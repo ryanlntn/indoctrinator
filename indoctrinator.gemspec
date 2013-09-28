@@ -1,5 +1,5 @@
 # -*- encoding: utf-8 -*-
-VERSION = "0.0.1" unless defined?(VERSION)  
+VERSION = "0.1.0" unless defined?(VERSION)  
 
 Gem::Specification.new do |spec|
   spec.name          = "indoctrinator"
@@ -7,8 +7,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Ryan Linton"]
   spec.email         = ["ryanlntn@gmail.com"]
 
-  spec.summary       = "Provides a Path style tutorial for RubyMotion apps."
-  spec.description   = "Provides a Path style tutorial for RubyMotion apps."
+  spec.summary       = "Provides a Path style tutorial view for RubyMotion apps."
+  spec.description   = "Provides a Path style tutorial view for RubyMotion apps."
 
   spec.homepage      = "https://github.com/ryanlntn/indoctrinator"
   spec.license       = "MIT"
