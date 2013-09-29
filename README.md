@@ -20,7 +20,7 @@ Currently there is a bug with [motion-cocoapods](https://github.com/HipByte/moti
 
 ```ruby
 app.pods do
-  pod 'PKRevealController'
+  pod 'ICETutorial'
 end
 ```
 
