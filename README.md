@@ -8,7 +8,7 @@ Indoctrinator is a RubyMotion gem that provides a Path style tutorial view for i
 
 Add this line to your application's Gemfile:
 
-    gem 'indoctrinator'
+    gem "indoctrinator"
 
 And then execute:
 
@@ -20,7 +20,7 @@ Currently there is a bug with [motion-cocoapods](https://github.com/HipByte/moti
 
 ```ruby
 app.pods do
-  pod 'PKRevealController'
+  pod "ICETutorial"
 end
 ```
 
