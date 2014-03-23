@@ -14,16 +14,6 @@ And then execute:
 
     $ bundle
 
-### Rakefile
-
-Currently there is a bug with [motion-cocoapods](https://github.com/HipByte/motion-cocoapods/issues/38) that doesn't allow us to automatically include an ObjC library automatically.  Because of this, you will need to edit your Rakefile as follows:
-
-```ruby
-app.pods do
-  pod "ICETutorial"
-end
-```
-
 ## Usage
 
 ```ruby
