@@ -1,5 +1,5 @@
 # -*- encoding: utf-8 -*-
-VERSION = "0.1.0" unless defined?(VERSION)  
+VERSION = "0.2.0" unless defined?(VERSION)
 
 Gem::Specification.new do |spec|
   spec.name          = "indoctrinator"
