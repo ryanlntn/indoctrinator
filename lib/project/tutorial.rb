@@ -2,7 +2,15 @@ module Indoctrinator
   class Tutorial < ICETutorialController
 
     def self.new(pages, args={})
-      tutorial = self.alloc.initWithNibName("ICETutorialController_iPhone", bundle: nil) 
+      tutorial = self.alloc.initWithNibName("ICETutorialController_iPhone", bundle: nil)
+
+      # For some reason the ICETutorial CocoaPod has issues with disabling autoscrolling
+      # It will scroll once (No matter what autoScrollEnabled is set to), and then stops on second page when disabled
+      # This fixes that issue
+      tutorial.autoScrollEnabled = args[:autoScrollEnabled] if args[:autoScrollEnabled] != nil
+      tutorial.autoScrollLooping = args[:autoScrollLooping] if args[:autoScrollLooping] != nil
+      tutorial.autoScrollDurationOnPage = args[:autoScrollDurationOnPage] || (args[:autoScrollEnabled] == true) ? tutorial.autoScrollDurationOnPage : Float::INFINITY
+
       tutorial.pages = pages
       tutorial.title = args[:title]
       tutorial.remove_buttons
